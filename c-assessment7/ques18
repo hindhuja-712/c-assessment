@@ -1,0 +1,27 @@
+#include<stdio.h>
+int sum=0,flag=0,digit=0,copy;
+void c(int a)
+{
+    digit=a%100;
+    
+    for(int i=2;i<digit;i++)
+    {
+        if(digit%i==0)
+        {
+            flag=1;
+            printf("Not prime");
+            break;
+        }
+    }
+    if(flag==0)
+    {
+        printf("Prime");
+    }
+}
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    c(a);
+    return 0;
+}

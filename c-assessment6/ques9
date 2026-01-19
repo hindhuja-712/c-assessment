@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a=10,copy,sum=0;
+    while(a<100)    
+    {
+        copy=a;
+        if(copy%10==5)
+        {
+            sum=sum+copy;
+        }
+        
+        copy/=10;
+        a++;
+    }
+    printf("%d",sum);
+}

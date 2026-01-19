@@ -1,0 +1,13 @@
+#include<stdio.h>
+void count()
+{
+    for(int i=5;i>=1;i--)
+    {
+        printf("%d ",i);
+    }
+}
+int main()
+{
+   count();
+   return 0;
+}

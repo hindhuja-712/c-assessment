@@ -1,0 +1,38 @@
+#include<stdio.h>
+int copy,sum=0,digit=0;
+void c(int a)
+{
+    copy=a;
+    int las=0,temp=1,fir=0,mid=0;
+    las=copy%10;
+    copy=a;
+    while(copy>0)
+    {
+        digit++;
+        copy/=10;
+    }
+    for(int i=1;i<digit;i++)
+    {
+       temp=temp*10;   
+    }
+    copy=a;
+    fir=copy/temp;
+    mid=copy%temp/10;
+    if(fir%2==0)
+    {
+        printf("%d",a);
+    }
+    else
+    {
+        fir=fir-1;
+        sum=fir*temp+mid*10+las;
+        printf("%d",sum);
+    }
+}
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    c(a);
+    return 0;
+}

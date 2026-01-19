@@ -1,0 +1,26 @@
+#include<stdio.h>
+int copy,flag=0,digit=0;
+void c(int a)
+{
+    for(int i=2;i<a;i++)
+    {
+        if(a%i==0)
+        {
+            flag=1;
+            printf("Not prime");
+            break;
+        }
+        
+    }
+    if(flag==0)
+        {
+            printf("Prime");
+        }
+}
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    c(a);
+    return 0;
+}

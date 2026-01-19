@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int sum=0,copy,num=0,i=1;
+    while(i<100000)
+    {
+        sum=0;copy=i;
+      while(copy>0)
+      {
+          sum=sum+copy%10;
+          copy/=10;
+      }
+          if(sum==14)
+          {
+              num++;
+          }
+      i++;
+    }
+    printf("%d",num);
+}

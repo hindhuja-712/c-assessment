@@ -1,0 +1,41 @@
+#include<stdio.h>
+int sum=0,flag=0,digit=0,copy;
+void c(int a)
+{
+    for(int i=2;i<a;i++)
+    {
+        if(a%i==0)
+        {
+            flag=1;
+            break;
+        }
+    }copy=a;
+    while(copy>0)
+        {
+            sum=sum+copy%10;
+            copy/=10;
+        }
+    if(flag==0&&sum==14)
+    {
+        printf("Prime&sum of digit is 14");
+    }
+    else if(flag==0&&sum!=14)
+    {
+        printf("prime &sum of digit is not 14");
+    }
+    else if(flag==1&&sum==14)
+    {
+        printf("Not prime & Sum of the digit is 14");
+    }
+    else if(flag==1&&sum!=14)
+    {
+        printf("Not prime but sum of the digit is not 14");
+    }
+}
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    c(a);
+    return 0;
+}

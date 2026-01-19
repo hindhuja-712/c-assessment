@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int a=10000,count=0,digit=0;
+    while(1)
+    {
+        if(a%7==0&&a%9==0)
+        {
+            printf("%d",a);
+            break;
+        }
+       a--; 
+    }
+}

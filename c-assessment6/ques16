@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a,flag;
+    scanf("%d",&a);
+    flag=0;
+    int i=2;
+    while(i<a)
+    {
+        if(a%i==0)
+        {
+            flag=1;
+            printf("Not prime");
+            break;
+        }
+        i++;
+    }
+    if(flag==0)
+    {
+        printf("Prime");
+    }
+    
+}

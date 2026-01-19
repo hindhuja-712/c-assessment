@@ -1,0 +1,25 @@
+#include<stdio.h>
+int sum=0,copy,count=0,digit=0;
+void c()
+{
+    for(int i=1;i<10000;i++)
+    {
+        copy=i;
+        sum=0;
+        while(copy>0)
+        {
+            sum=sum+copy%10;
+            copy/=10;
+        }
+        if(sum==14)
+        {
+            count++;
+        }
+    }
+    printf("%d",count);
+}
+int main()
+{
+     c();
+    return 0;
+}

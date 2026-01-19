@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int a,b,max=0,lcm=0,i,c;
+    scanf("%d %d %d",&a,&b,&c);
+    if(a>b&&a>c)max=a;
+    else if(b>a&&b>c)max=b;
+    else max=c;
+    i=max;
+    while(i<=a*b*c)
+    {
+        if(i%a==0&&i%b==0&&i%c==0)
+        {
+            lcm=i;
+            break;
+        }
+       i++;
+    }
+    printf("%d",lcm);
+}

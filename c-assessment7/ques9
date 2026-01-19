@@ -1,0 +1,17 @@
+#include<stdio.h>
+int copy,sum=0,a=0;
+void count()
+{
+    for(int i=10;i<100;i++)
+    {
+        copy=i;
+        a=copy%10;
+        if(a==5)sum=i+sum;
+    }
+    printf("%d",sum);
+}
+int main()
+{
+   count();
+   return 0;
+}

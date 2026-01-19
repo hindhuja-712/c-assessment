@@ -1,0 +1,15 @@
+#include<stdio.h>
+int sum=0;
+void count()
+{
+    for(int i=5;i>=1;i--)
+    {
+        sum+=i;
+    }
+    printf("%d",sum);
+}
+int main()
+{
+   count();
+   return 0;
+}

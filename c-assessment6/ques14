@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    int a,rev=0,fir=0,las=0,copy,temp=1,mid=0;
+    scanf("%d",&a);
+    copy=a;
+    las=copy%10;
+    copy=a;
+    while(copy>0)
+    {
+        temp=temp*10;
+        copy/=10;
+    }copy=a;
+    fir=copy/(temp/10);
+    mid=a%(temp/10)/10;
+    rev=las*(temp/10)+mid*10+fir;
+    printf("%d",rev);
+}

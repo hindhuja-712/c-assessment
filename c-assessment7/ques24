@@ -1,0 +1,23 @@
+#include<stdio.h>
+int sum=0,flag=0,count=0,digit=0;
+void c(int a)
+{
+    while(a>9)
+    {
+        digit=a%100;
+        if(digit==16||digit==25||digit==36||digit==49||digit==64||digit==81)
+        {
+            count++;
+        }
+        a/=10;
+    }
+    printf("%d",count);
+}
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    c(a);
+    return 0;
+    
+}

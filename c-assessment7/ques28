@@ -1,0 +1,23 @@
+#include<stdio.h>
+int lcm=0,max=0;
+void c(int a ,int b)
+{
+    if(a>b)max=a;
+    else max=b;
+    for(int i=max;i<=a*b;i++)
+    {
+     if(i%a==0&&i%b==0)
+     {
+         lcm=i;
+         break;
+     }
+    }
+    printf("%d",lcm);
+}
+int main()
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    c(a,b);
+    return 0;
+}

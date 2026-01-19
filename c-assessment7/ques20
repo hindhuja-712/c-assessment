@@ -1,0 +1,27 @@
+#include<stdio.h>
+int sum=0,flag=0,count=0,copy;
+void c()
+{
+    for(int i=2;i<10;i++)
+    {
+        flag=0;
+        for(int j=2;j<i;j++)
+        {
+            if(i%j==0)
+            {
+                flag=1;
+                break;
+            }
+        }
+        if(flag==0)
+        {
+            count++;
+        }
+    }
+    printf("%d",count);
+}
+int main()
+{
+    c();
+    return 0;
+}
