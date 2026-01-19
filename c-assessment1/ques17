@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int flag;
+    flag=a;
+    int c=0;
+    c=flag/10;
+    int temp=0;
+    temp=c*10;
+    printf("%d",temp);
+}

@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int flag;
+    flag=a;
+    int b=0;
+    b=flag%10;
+    flag=a;
+    int c=0;
+    c=flag/10;
+    int sum=0;
+    sum=b+c;
+    printf("%d",sum);
+}
