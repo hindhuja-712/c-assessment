@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    a=5;
+    loop:
+    printf("%d\n",a);
+    a--;
+    if(a>=1)
+    {
+        goto loop;
+    }
+    return 0;
+}

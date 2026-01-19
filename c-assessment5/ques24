@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int a,two=0,b=0,num=0;
+    scanf("%d",&a);
+    for(;a>0;a/=10)
+    {
+      two=a%100;
+      if(two==16||two==25||two==36||two==49||two==64||two==81)
+       {
+        num++;
+       }
+    }
+    printf("%d",num);
+}

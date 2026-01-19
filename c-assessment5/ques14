@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int rev=0,digit=0,temp=1,fir=0,flag;
+    flag=a;
+    fir=flag%10;
+    flag=a;
+    for(;flag>0;flag/=10)
+    {
+        temp=temp*10;
+        digit++;
+    }
+    int las=0,mid=0;
+    flag=a;
+    las=flag/(temp/10);
+    
+    flag=a;
+    mid=flag%(temp/10)/10;
+    rev=fir*(temp/10)+mid*10+las;
+    printf("%d",rev);
+}

@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    int a,num=0,tem=0;
+    scanf("%d",&a);
+    for(;a>0;a/=10)
+    {
+        tem=a%10;
+        if(tem%2!=0)
+        {
+            num++;
+        }
+    }
+    printf("%d",num);
+}

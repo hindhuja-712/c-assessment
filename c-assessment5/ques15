@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int sum=0,temp=1,las=0,flag,fir=0,mid;
+    flag=a;
+    las=flag%10;
+    flag=a;
+    for(;flag>0;flag/=10)
+    {
+        temp=temp*10;
+    }
+    if(las%2==0)
+    {
+        printf("%d\n",a);
+    }
+    else
+    {
+        flag=a;
+        fir=flag/(temp/10);
+        fir=fir-1;
+        sum=fir*(temp/10)+flag%(temp/10);
+        printf("%d\n",sum);
+    }
+}

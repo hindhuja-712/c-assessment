@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int sum=0;
+    int copy=0;
+    int temp=1;
+    int flag;
+    flag=a;
+    loop:
+    if(flag>0)
+    {
+        copy=flag%10;
+        flag/=10;
+        temp=temp*10;
+        goto loop;
+    }
+    int fir=0;
+    flag=a;
+    fir=flag/(temp/10);
+    int last=0;
+    last=flag%10;
+    int mid=0;
+    int get=0;
+    get=last;
+    mid=(a%(temp/10))/10;
+    get=last*(temp/10)+mid*10+fir;
+    printf("%d",get);
+}

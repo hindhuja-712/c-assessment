@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a,las=0,b=0,copy,flag=0;
+    scanf("%d",&a);
+    copy=a;
+    las=copy/10;
+    b=las%100;
+    for(int i=2;i<b;i++)
+    {
+        flag=0;
+        if(b%i==0)
+        {
+            flag=1;
+            printf("Not prime");
+            break;
+        }
+    }
+    if(flag==0)
+    {
+        printf("Prime");
+    }
+}

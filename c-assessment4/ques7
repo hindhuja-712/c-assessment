@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    a=10;
+    int flag,sum=0,b=0,c=0;
+    
+    loop:
+    flag=a;
+    b=flag%10;
+    c=flag/10;
+    sum=b+c;
+    if(a%2!=0&&sum==7)
+    {
+    printf("%d\n",a);
+    }
+    a++;
+    
+    if(a<=100)
+    {
+        
+        goto loop;
+    }
+   
+    return 0;
+}

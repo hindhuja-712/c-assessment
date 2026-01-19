@@ -1,0 +1,37 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int flag;
+    flag=a;
+    int temp=1;
+    int rev=0;
+    loop:
+    if(flag>0)
+    {
+        rev=flag%10;
+        flag/=10;
+        temp=temp*10;
+        goto loop;
+    }
+    int fir=0;
+    flag=a;
+    int sum=0;
+    fir=flag/(temp/10);
+    int c=0;
+    c=flag%(temp/10);
+    int b=0;
+    if(fir%2!=0)
+    {
+       printf("%d",a); 
+    }
+    
+    else if(fir%2==0)
+    {
+        sum=fir-1;
+        b=sum*(temp/10)+c;
+         printf("%d",b);
+    }
+   
+}

@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    a=0;
+    int sum=0;
+    loop:
+    a++;
+    if(a<=5)
+    {
+        sum=sum+a;
+        goto loop;
+    }
+    printf("%d",sum);
+    return 0;
+}

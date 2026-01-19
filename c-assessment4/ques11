@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a;
+    scanf("%d",&a);
+    int digits=0;
+    int copy=0;
+    loop:
+    if(a>0)
+    {
+        copy=a%10;
+        a/=10;
+        digits++;
+        goto loop;
+    }
+    printf("%d",digits);
+}
